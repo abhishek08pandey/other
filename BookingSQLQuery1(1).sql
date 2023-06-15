@@ -24,8 +24,10 @@ TRUNCATE TABLE [dbo].[SeatConfiguration]
 
   Select Count(*) FROM Booking.SeatRequest WHERE EmployeeId='8a71184d-39cf-4815-84d7-d9c79c161abb' AND BookingDate= '2023-06-08' AND DeletedDate = null;
 
-  UPDATE  Booking.SeatRequest  SET SeatRequest.RequestStatus = 1 WHERE EmployeeId = 'db001219-0d36-4804-ba00-459b58347beb';
-  DELETE  FROM Booking.SeatRequest WHERE SeatRequestId in(7,8);;
+  UPDATE  Booking.SeatRequest  SET SeatRequest.RequestStatus = 1 WHERE SeatRequestId =13
+
+   UPDATE  [Ref].[Seat]  SET Seat.IsAvailable = 1  WHERE SeatId = 13;
+  DELETE  FROM Booking.SeatRequest WHERE SeatRequestId =2;
 create schema Booking
 GO
 
