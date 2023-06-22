@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="local" value="C:\\Deskbook\\logs\\local" />
+    <property name="dev" value="C:\\deskbook-userapi\\dev-logs" />
+    <property name="qa" value="C:\\deskbook-qa-userapi\\qa-logs" />
+    <springProfile name="local">
+        <property name="logLocation" value="${local}" />
+    </springProfile>
+    <springProfile name="dev">
+        <property name="logLocation" value="${dev}" />
+    </springProfile>
+    <springProfile name="qa">
+        <property name="logLocation" value="${qa}" />
+    </springProfile>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} -
+                %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+    <appender name="FILE-AUDIT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logLocation}/deskbook.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} -
+                %msg%n
+            </Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${logLocation}/archived/debug.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+    
+    <!-- Send logs to both console and file audit -->
+    <logger name="com.onerivet.deskbook.controllers" level="info" additivity="false">
+        <appender-ref ref="FILE-AUDIT" />
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE-AUDIT" />
+    </root>
+</configuration>

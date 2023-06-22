@@ -1,0 +1,96 @@
+2023-06-16 18:02:28 [main] INFO  c.o.d.c.BookingHistoryController -
+                [cancelBooking()] started
+2023-06-16 18:02:28 [main] INFO  c.o.d.c.BookingHistoryController -
+                [cancelBooking()] ended
+2023-06-16 18:02:28 [main] INFO  c.o.d.c.BookingHistoryController -
+                [getBookingHistoryWithStatus()] started
+2023-06-16 18:02:28 [main] INFO  c.o.d.c.BookingHistoryController -
+                [getBookingHistoryWithStatus()] ended
+2023-06-16 18:02:28 [main] INFO  c.o.d.controllers.CityController -
+                [getCities()] started
+2023-06-16 18:02:28 [main] INFO  c.o.d.controllers.CityController -
+                [getCities()] ended
+2023-06-16 18:02:28 [main] INFO  c.o.d.controllers.CityController -
+                [getCities()] started
+2023-06-16 18:02:28 [main] INFO  c.o.d.controllers.CityController -
+                [getCities()] ended
+2023-06-16 18:02:28 [main] INFO  c.o.d.c.DesignationController -
+                [getDesignations()] started
+2023-06-16 18:02:28 [main] INFO  c.o.d.c.DesignationController -
+                [getDesignations()] ended
+2023-06-16 18:02:28 [main] INFO  c.o.d.c.DesignationController -
+                [getDesignations()] started
+2023-06-16 18:02:28 [main] INFO  c.o.d.c.DesignationController -
+                [getDesignations()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.controllers.EmployeeController -
+                [updateById()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.controllers.EmployeeController -
+                [updateById()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.controllers.EmployeeController -
+                [getById()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.controllers.EmployeeController -
+                [getById()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.ModeOfWorkController -
+                [getModeOfWork()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.ModeOfWorkController -
+                [getModeOfWork()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.ModeOfWorkController -
+                [getModeOfWork()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.ModeOfWorkController -
+                [getModeOfWork()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.RequestHistoryController -
+                [getAllbyFirstNameandLastName()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.RequestHistoryController -
+                [getAllbyFirstNameandLastName()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.RequestHistoryController -
+                [getReqestHistory()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.RequestHistoryController -
+                [getReqestHistory()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getSeats()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getSeats()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getSeats()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getSeats()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getFloors()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getFloors()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getColumns()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getColumns()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getFloors()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getFloors()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getColumns()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.SeatConfigurationController -
+                [getColumns()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.controllers.SeatViewController -
+                [getView()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.controllers.SeatViewController -
+                [getView()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.controllers.SeatViewController -
+                [seatInformation()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.controllers.SeatViewController -
+                [seatInformation()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.controllers.SeatViewController -
+                [getView()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.controllers.SeatViewController -
+                [getView()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.WorkingDayController -
+                [getWorkingDays()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.WorkingDayController -
+                [getWorkingDays()] ended
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.WorkingDayController -
+                [getWorkingDays()] started
+2023-06-16 18:02:29 [main] INFO  c.o.d.c.WorkingDayController -
+                [getWorkingDays()] ended
+2023-06-16 18:02:29 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+                Could not detect default configuration classes for test class [com.onerivet.deskbook.DeskbookUserServicesApplicationTests]: DeskbookUserServicesApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-16 18:02:30 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+                Found @SpringBootConfiguration com.onerivet.deskbook.DeskbookUserServicesApplication for test class com.onerivet.deskbook.DeskbookUserServicesApplicationTests

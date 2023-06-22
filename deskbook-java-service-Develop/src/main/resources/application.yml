@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+
+server: 
+  servlet: 
+    session: 
+      timeout: 180s
+
+
+
+image:
+  upload:
+    path: C:/Deskbook/images/
+            
+          

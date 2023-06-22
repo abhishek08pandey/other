@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seat cancellation mail to seat owner</title>
+</head>
+<body style="font-family: sans-serif;">
+	<div
+		style="max-width: 768px; margin: 0 auto; background-color: #fbfbfb; padding: 5px;">
+		<table>
+			<tr>
+				<td>
+					<p>
+						Dear <span th:text="${body.employeeName}"></span>,
+					</p>
+				</td>
+			</tr>
+			<tr style="font-size: 14px;">
+				<td>
+					<p>
+						We hope this email finds you well. We wanted to inform you that
+						your previously approved office seat booking for <span
+							th:text="${body.bookingDate}"></span> in the Deskbook Application
+						System has been canceled.
+					</p>
+					<p>The seat you had reserved is now available for others to
+						book.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Thanks,</p>
+					<p>
+						<img src="cid:logoImage" alt="db-logo"
+							style="width: 30px; border-right: 2px solid black; padding-right: 4px;" />
+						Deskbook
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>

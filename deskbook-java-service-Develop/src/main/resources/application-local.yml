@@ -1,0 +1,26 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://1authority-interns.1rivet.com:5004
+          jwkSeturi: https://1authority-interns.1rivet.com:5004/.well-known/openid-configuration/jwks
+          audiences: DeskBookApi
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=DeskBookDev;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: Admin@123
+  jpa:
+    show-sql: true
+    hibernate:
+     ddl-auto: validate
+     naming:
+       physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+server:
+   port: 9443
+
+
+
+          
+          
